@@ -1,0 +1,70 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="thumbnail" style="background:url(http://cdn.magdeleine.co/wp-content/uploads/2015/05/IMG_8229-1400x933.jpg); background-size:cover;">
+  
+</div>
+
+<div class="infoPage">  
+  <span class="close">
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<g>
+	<path d="M47,48.5c-0.6,0-1.3-0.2-1.8-0.7L16.4,19c-1-1-1-2.6,0-3.5c1-1,2.6-1,3.5,0l28.8,28.8c1,1,1,2.6,0,3.5
+		C48.3,48.3,47.6,48.5,47,48.5z"/>
+</g>
+<g>
+	<path d="M18.2,48.5c-0.6,0-1.3-0.2-1.8-0.7c-1-1-1-2.6,0-3.5l28.8-28.8c1-1,2.6-1,3.5,0c1,1,1,2.6,0,3.5L20,47.8
+		C19.5,48.3,18.8,48.5,18.2,48.5z"/>
+</g>
+</svg>
+  </span>
+  <span class="moveup">
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<g>
+	<path d="M54.2,27.1c-0.6,0-1.3-0.2-1.8-0.7L32.6,6.5L12.8,26.4c-1,1-2.6,1-3.5,0c-1-1-1-2.6,0-3.5L30.8,1.2c1-1,2.6-1,3.5,0
+		L56,22.8c1,1,1,2.6,0,3.5C55.5,26.9,54.8,27.1,54.2,27.1z"/>
+</g>
+<g>
+	<path d="M32.6,63.1c-1.4,0-2.5-1.1-2.5-2.5V3c0-1.4,1.1-2.5,2.5-2.5c1.4,0,2.5,1.1,2.5,2.5v57.6C35.1,62,34,63.1,32.6,63.1z"/>
+</g>
+</svg>
+  </span>
+  <span class="movedown">
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<g>
+	<path d="M54.2,36.5c-0.6,0-1.3,0.2-1.8,0.7L32.6,57.1L12.8,37.2c-1-1-2.6-1-3.5,0c-1,1-1,2.6,0,3.5l21.6,21.6c1,1,2.6,1,3.5,0
+		L56,40.8c1-1,1-2.6,0-3.5C55.5,36.7,54.8,36.5,54.2,36.5z"/>
+</g>
+<g>
+	<path d="M32.6,0.5c-1.4,0-2.5,1.1-2.5,2.5v57.6c0,1.4,1.1,2.5,2.5,2.5c1.4,0,2.5-1.1,2.5-2.5V3C35.1,1.6,34,0.5,32.6,0.5z"/>
+</g>
+</svg>
+  </span>
+  <div class="title">
+  </div>
+  <div class="content">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus, nulla id imperdiet rutrum, tortor leo ornare lacus, ut porttitor ligula mauris vulputate nulla. Sed mollis condimentum risus nec finibus. Pellentesque vel molestie neque. Vivamus feugiat et elit id placerat. Duis vitae nunc a odio semper pretium ac ut diam. Nullam varius, erat sed accumsan placerat, tortor nisi pellentesque magna, et placerat purus tortor a lectus. Donec pharetra blandit risus vel congue. Vivamus ut semper magna. Aliquam viverra sollicitudin odio, ac mollis enim aliquet sed. Aenean leo risus, consectetur nec felis ac, pulvinar ultrices justo. Sed est mauris, tincidunt non porttitor nec, porttitor vitae ex. Mauris eu faucibus erat, a cursus dui. Praesent ut pharetra odio, ut viverra velit. Aenean egestas lacus feugiat facilisis lacinia. Etiam turpis ex, tristique at sollicitudin a, faucibus non est. Sed at pharetra tellus, ut pharetra neque.
+  </div>
+</div>
+<script>
+    $(".thumbnail").click(function(){
+  $(".infoPage").attr("style", "display:flex;");
+  
+  setTimeout(function(){
+    $(".infoPage").addClass("open");
+  }, 100);
+})
+
+$(".close").click(function(){
+  $(".infoPage").removeClass("open");
+  setTimeout(function(){
+    $(".infoPage").attr("style", "display:none;");
+                       }, 300);
+  
+})
+</script>

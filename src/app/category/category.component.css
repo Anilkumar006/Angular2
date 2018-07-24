@@ -1,0 +1,90 @@
+body{
+    margin:0;
+    font-family:Open sans, sans-serif;
+  }
+  
+  .thumbnail{
+    height:300px;
+    width:400px;
+    margin:25px;
+    cursor:pointer;
+    box-shadow: 0 0 0px 10px rgba(0,0,0,.05);
+  }
+  
+  .infoPage{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    opacity:0;
+    display:none;
+    transition: .3s all;
+  }
+  
+  .open{
+    opacity:1;
+  }
+  
+  .close, .moveup, .movedown{
+    position:absolute;
+    top:30px;
+    right:30px;
+    height:50px;
+    width:50px;
+    background:white;
+    border-radius:50%;
+    box-shadow:0 0 20px 0 rgba(0,0,0,.2);
+    display:inline-block;
+    cursor:pointer;
+    transition:.3s all;
+  }
+  
+  .infoPage span:hover{
+    background:#0473da;
+  }
+  
+  
+  .infoPage span svg{
+    fill: #333;
+  }
+  
+  .infoPage span:hover svg{
+    fill: #fff;
+  }
+  
+  .close:hover svg{  
+    transform:translateX(-50%) translateY(-50%) rotate(180deg);
+  }
+  
+  .close svg, .moveup svg, .movedown svg{
+    position:relative;
+    left:50%;
+    top:50%;
+    height:18px;
+    opacity:.7;
+    transform:translateX(-50%) translateY(-50%);
+    transition:.3s all;
+  }
+  
+  .moveup{
+    top:130px;
+  }
+  
+  .movedown{
+    top:200px;
+  }
+  
+  .title{
+    flex:2;
+    background:url(http://cdn.magdeleine.co/wp-content/uploads/2015/05/IMG_8229-1400x933.jpg) center center no-repeat;
+    background-size:cover;
+  }
+  
+  .content{
+    flex:3;
+    background:white;
+    padding:50px 120px 50px 50px;
+    line-height:2em;
+    font-size:1.2em;
+  }
